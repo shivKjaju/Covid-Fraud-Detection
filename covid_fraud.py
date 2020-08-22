@@ -42,7 +42,7 @@ for i in range(len(result_data_agg)):
     result_data_agg['percentage'].iloc[i] = (
         (result_data_agg['count'].iloc[i])/count)*100
 
-result_data_agg.sort_values('percentage', inplace=True, ascending=False)
+result_data_agg.sort_values('number', inplace=True, ascending=True)
 
 result = result_data_agg[['number', 'percentage']]
 
